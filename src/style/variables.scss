@@ -1,0 +1,94 @@
+$success: #b4ff00;
+$gray: #f8f8f8;
+$primary: #4b00ff;
+$smi-gray: #cfcfcf;
+
+$theme-colors: (
+  "dark": $black,
+  "gray": $gray,
+  "smi-gray": $smi-gray,
+  "primary": $primary,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1330px,
+);
+
+$font-family: "Montserrat", sans-serif;
+$font-family-base: $font-family !important;
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 800 !default;
+
+$h1-font-size: $font-size-base * 6.25;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 2.375;
+$h4-font-size: $font-size-base * 2;
+$h5-font-size: $font-size-base * 1.875;
+$h6-font-size: $font-size-base * 1.125;
+
+$paragraph-margin-bottom: 0;
+$headings-margin-bottom: 0;
+
+$enable-responsive-font-sizes: true;
+$enable-shadows: false;
+
+$btn-spitogatos-border-radius: 2.625rem;
+$btn-spitogatos-padding-y: 1.063rem;
+$btn-spitogatos-padding-x: 5.438rem;
+$btn-spitogatos-font-weight: 800;
+
+$input-border-color: #000000;
+
+$input-focus-box-shadow: none;
+$input-focus-border-color: #4b00ff !important;
+$input-bg: $gray !important;
+
+$navbar-padding-y: 0;
+
+$border-radius-xl: 1.75rem;
+
+$rfs-base-value: 16; // used for rfs and rem calculations
+
+$spacer: 1rem;
+$spacers: ();
+
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 4 / $rfs-base-value,
+    ),
+    2: (
+      $spacer * 9 / $rfs-base-value,
+    ),
+    3: $spacer,
+    4: (
+      $spacer * 20 / $rfs-base-value,
+    ),
+    5: (
+      $spacer * 24 / $rfs-base-value,
+    ),
+    6: (
+      $spacer * 32 / $rfs-base-value,
+    ),
+    7: (
+      $spacer * 47 / $rfs-base-value,
+    ),
+    8: (
+      $spacer * 63 / $rfs-base-value,
+    ),
+    9: (
+      $spacer * 80 / $rfs-base-value,
+    ),
+    10: (
+      $spacer * 108 / $rfs-base-value,
+    ),
+  ),
+  $spacers
+);
